@@ -1,0 +1,24 @@
+{
+	"name": "next-pnp-resolve",
+	"version": "1.0.1",
+	"description": "A hook to resolve Yarn PnP modules in the Nextjs file tracing.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": "https://github.com/iivankin/next-pnp-resolve.git",
+	"author": "iivankin",
+	"license": "MIT",
+	"private": false,
+	"files": [
+		"dist/*.js",
+		"dist/*.d.ts"
+	],
+	"scripts": {
+		"build": "tsc",
+		"push": "rm -rf dist && yarn build && yarn publish"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.21",
+		"@vercel/nft": "^0.17.5",
+		"typescript": "4.5.5"
+	}
+}
